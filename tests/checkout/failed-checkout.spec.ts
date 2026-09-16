@@ -30,8 +30,6 @@ await page.locator('[data-test="postalCode"]').fill('');
 
 await page.locator('[data-test="continue"]').click();
 
-await page.locator('[data-test="finish"]').click();
-
 await expect(page.locator('[data-test="error-button"]')).toBeVisible();
 
 });
